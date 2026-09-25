@@ -1,0 +1,10 @@
+{
+  "system": "fusion",
+  "utterances": 1400,
+  "feature_seconds": {
+    "audio": 0.0,
+    "asr": 795.9171274367254,
+    "text": 14.932597748585977,
+    "mimi": 0.0
+  }
+}

@@ -1,0 +1,16 @@
+__pycache__/
+.pytest_cache/
+.venv/
+*.egg-info/
+.DS_Store
+data/
+cache/
+runs/
+*.pt
+*.mp4
+*.wav
+*.tar.gz
+.env
+!artifacts/final/checkpoints/sentiment/*.pt
+!artifacts/final/checkpoints/emotion/*.pt
+!artifacts/crema_d_supervised/checkpoints/*.pt

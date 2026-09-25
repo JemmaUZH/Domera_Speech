@@ -1,0 +1,10 @@
+{
+  "system": "mimi",
+  "utterances": 1400,
+  "feature_seconds": {
+    "audio": 0.0,
+    "asr": 0.0,
+    "text": 0.0,
+    "mimi": 128.93684663192835
+  }
+}

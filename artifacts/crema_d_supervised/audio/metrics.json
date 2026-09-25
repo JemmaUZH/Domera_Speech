@@ -1,0 +1,159 @@
+{
+  "dataset": "CREMA-D",
+  "split": "fixed 200-example test",
+  "system": "audio",
+  "evaluation_type": "CREMA-D trained classifier head; frozen pretrained encoder; test speakers held out",
+  "count": 200,
+  "label_names": [
+    "anger",
+    "disgust",
+    "fear",
+    "joy",
+    "neutral",
+    "sadness"
+  ],
+  "macro_f1": 0.6489394191792992,
+  "weighted_f1": 0.6474737631184407,
+  "accuracy": 0.65,
+  "per_class": [
+    {
+      "label": "anger",
+      "precision": 0.8125,
+      "recall": 0.7647058823529411,
+      "f1": 0.7878787878787878,
+      "support": 34
+    },
+    {
+      "label": "disgust",
+      "precision": 0.6285714285714286,
+      "recall": 0.6470588235294118,
+      "f1": 0.6376811594202898,
+      "support": 34
+    },
+    {
+      "label": "fear",
+      "precision": 0.5714285714285714,
+      "recall": 0.5882352941176471,
+      "f1": 0.5797101449275363,
+      "support": 34
+    },
+    {
+      "label": "joy",
+      "precision": 0.75,
+      "recall": 0.5294117647058824,
+      "f1": 0.6206896551724138,
+      "support": 34
+    },
+    {
+      "label": "neutral",
+      "precision": 0.6190476190476191,
+      "recall": 0.8666666666666667,
+      "f1": 0.7222222222222222,
+      "support": 30
+    },
+    {
+      "label": "sadness",
+      "precision": 0.5625,
+      "recall": 0.5294117647058824,
+      "f1": 0.5454545454545454,
+      "support": 34
+    }
+  ],
+  "confusion_matrix": [
+    [
+      26,
+      2,
+      1,
+      2,
+      2,
+      1
+    ],
+    [
+      1,
+      22,
+      4,
+      2,
+      1,
+      4
+    ],
+    [
+      1,
+      2,
+      20,
+      1,
+      3,
+      7
+    ],
+    [
+      3,
+      3,
+      4,
+      18,
+      5,
+      1
+    ],
+    [
+      1,
+      0,
+      1,
+      1,
+      26,
+      1
+    ],
+    [
+      0,
+      6,
+      5,
+      0,
+      5,
+      18
+    ]
+  ],
+  "confusion_matrix_labels": [
+    "anger",
+    "disgust",
+    "fear",
+    "joy",
+    "neutral",
+    "sadness"
+  ],
+  "prediction_distribution": [
+    {
+      "label": "anger",
+      "count": 32,
+      "percentage": 16.0
+    },
+    {
+      "label": "disgust",
+      "count": 35,
+      "percentage": 17.5
+    },
+    {
+      "label": "fear",
+      "count": 35,
+      "percentage": 17.5
+    },
+    {
+      "label": "joy",
+      "count": 24,
+      "percentage": 12.0
+    },
+    {
+      "label": "neutral",
+      "count": 42,
+      "percentage": 21.0
+    },
+    {
+      "label": "sadness",
+      "count": 32,
+      "percentage": 16.0
+    }
+  ],
+  "test_sample_hash": "0dc41373c8fd2ca2f4a7ed8bde8badd732894d8f495ad62be47ff41950ae25d4",
+  "test_manifest_sha256": "3a451e6f2059560f21bb3d1dd05299c8b9eb46747e2fb26265c150ac708a5033",
+  "checkpoint": "../checkpoints/audio.pt",
+  "checkpoint_sha256": "0e7a863ae3e5373410b1185005e3cb2b10f32f07808519227de3277067966239",
+  "mean_classifier_latency_seconds_per_utterance": 4.691460053436458e-06,
+  "latency_note": "Measured classifier-only latency over precomputed frozen encoder features; excludes audio encoder/ASR runtime.",
+  "created_at_utc": "2026-09-25T14:36:51.483682+00:00"
+}

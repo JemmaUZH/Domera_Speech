@@ -1,0 +1,45 @@
+{
+  "dataset": "CREMA-D",
+  "systems": [
+    "audio",
+    "fusion",
+    "mimi"
+  ],
+  "labels": [
+    "anger",
+    "disgust",
+    "fear",
+    "joy",
+    "neutral",
+    "sadness"
+  ],
+  "train_count": 1000,
+  "validation_count": 200,
+  "test_count": 200,
+  "encoders": "frozen pretrained encoders; train only the simple MLP classifier head",
+  "train_split": "official speaker-disjoint TFDS 1.0.0 train; stratified 1000 subset",
+  "validation_split": "official speaker-disjoint TFDS 1.0.0 validation; stratified 200 subset",
+  "test_manifest": "data/crema_d_supervised/test.jsonl",
+  "test_manifest_sha256": "3a451e6f2059560f21bb3d1dd05299c8b9eb46747e2fb26265c150ac708a5033",
+  "seed": 42,
+  "epochs": 50,
+  "patience": 7,
+  "batch_size": 64,
+  "hidden_dim": 128,
+  "dropout": 0.2,
+  "learning_rate": 0.001,
+  "checkpoint_selection": "validation Macro-F1; test labels not used for model selection",
+  "device": "cpu",
+  "python_version": "3.12.2",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "package_versions": {
+    "torch": "2.5.1",
+    "numpy": "2.2.4",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.10.1",
+    "soundfile": "0.14.0"
+  },
+  "feature_cache": "cache/crema_d_supervised",
+  "created_at_utc": "2026-09-25T14:52:44.301570+00:00",
+  "old_cross_dataset_outputs_preserved": true
+}

@@ -1,0 +1,434 @@
+{
+  "dataset": "MELD",
+  "task": "3-class sentiment",
+  "test_samples": 200,
+  "label_order": [
+    "negative",
+    "neutral",
+    "positive"
+  ],
+  "metrics": {
+    "audio_only": {
+      "accuracy": 0.445,
+      "macro_f1": 0.43021831013222683,
+      "per_class": {
+        "negative": {
+          "precision": 0.36904761904761907,
+          "recall": 0.484375,
+          "f1-score": 0.4189189189189189,
+          "support": 64.0
+        },
+        "neutral": {
+          "precision": 0.581081081081081,
+          "recall": 0.4479166666666667,
+          "f1-score": 0.5058823529411764,
+          "support": 96.0
+        },
+        "positive": {
+          "precision": 0.35714285714285715,
+          "recall": 0.375,
+          "f1-score": 0.36585365853658536,
+          "support": 40.0
+        },
+        "accuracy": 0.445,
+        "macro avg": {
+          "precision": 0.43575718575718575,
+          "recall": 0.4357638888888889,
+          "f1-score": 0.43021831013222683,
+          "support": 200.0
+        },
+        "weighted avg": {
+          "precision": 0.46844272844272844,
+          "recall": 0.445,
+          "f1-score": 0.45004831517313576,
+          "support": 200.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          31,
+          21,
+          12
+        ],
+        [
+          38,
+          43,
+          15
+        ],
+        [
+          15,
+          10,
+          15
+        ]
+      ],
+      "confusion_matrix_order": [
+        "negative",
+        "neutral",
+        "positive"
+      ],
+      "count": 200,
+      "weighted_f1": 0.45004831517313576
+    },
+    "text_only": {
+      "accuracy": 0.485,
+      "macro_f1": 0.48830048053349023,
+      "per_class": {
+        "negative": {
+          "precision": 0.4117647058823529,
+          "recall": 0.4375,
+          "f1-score": 0.42424242424242425,
+          "support": 64.0
+        },
+        "neutral": {
+          "precision": 0.5942028985507246,
+          "recall": 0.4270833333333333,
+          "f1-score": 0.49696969696969695,
+          "support": 96.0
+        },
+        "positive": {
+          "precision": 0.4444444444444444,
+          "recall": 0.7,
+          "f1-score": 0.5436893203883495,
+          "support": 40.0
+        },
+        "accuracy": 0.485,
+        "macro avg": {
+          "precision": 0.48347068295917395,
+          "recall": 0.5215277777777777,
+          "f1-score": 0.48830048053349023,
+          "support": 200.0
+        },
+        "weighted avg": {
+          "precision": 0.5058709860755896,
+          "recall": 0.485,
+          "f1-score": 0.48304089438070025,
+          "support": 200.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          28,
+          21,
+          15
+        ],
+        [
+          35,
+          41,
+          20
+        ],
+        [
+          5,
+          7,
+          28
+        ]
+      ],
+      "confusion_matrix_order": [
+        "negative",
+        "neutral",
+        "positive"
+      ],
+      "count": 200,
+      "weighted_f1": 0.48304089438070025
+    },
+    "audio_text": {
+      "accuracy": 0.52,
+      "macro_f1": 0.5283595385506213,
+      "per_class": {
+        "negative": {
+          "precision": 0.43037974683544306,
+          "recall": 0.53125,
+          "f1-score": 0.4755244755244755,
+          "support": 64.0
+        },
+        "neutral": {
+          "precision": 0.6557377049180327,
+          "recall": 0.4166666666666667,
+          "f1-score": 0.5095541401273885,
+          "support": 96.0
+        },
+        "positive": {
+          "precision": 0.5,
+          "recall": 0.75,
+          "f1-score": 0.6,
+          "support": 40.0
+        },
+        "accuracy": 0.52,
+        "macro avg": {
+          "precision": 0.5287058172511586,
+          "recall": 0.5659722222222222,
+          "f1-score": 0.5283595385506213,
+          "support": 200.0
+        },
+        "weighted avg": {
+          "precision": 0.5524756173479975,
+          "recall": 0.52,
+          "f1-score": 0.5167538194289787,
+          "support": 200.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          34,
+          18,
+          12
+        ],
+        [
+          38,
+          40,
+          18
+        ],
+        [
+          7,
+          3,
+          30
+        ]
+      ],
+      "confusion_matrix_order": [
+        "negative",
+        "neutral",
+        "positive"
+      ],
+      "count": 200,
+      "weighted_f1": 0.5167538194289787
+    },
+    "continuous_mimi": {
+      "accuracy": 0.46,
+      "macro_f1": 0.4476334714805789,
+      "per_class": {
+        "negative": {
+          "precision": 0.43243243243243246,
+          "recall": 0.5,
+          "f1-score": 0.463768115942029,
+          "support": 64.0
+        },
+        "neutral": {
+          "precision": 0.5584415584415584,
+          "recall": 0.4479166666666667,
+          "f1-score": 0.49710982658959535,
+          "support": 96.0
+        },
+        "positive": {
+          "precision": 0.3469387755102041,
+          "recall": 0.425,
+          "f1-score": 0.38202247191011235,
+          "support": 40.0
+        },
+        "accuracy": 0.46,
+        "macro avg": {
+          "precision": 0.44593758879473167,
+          "recall": 0.45763888888888893,
+          "f1-score": 0.4476334714805789,
+          "support": 200.0
+        },
+        "weighted avg": {
+          "precision": 0.4758180815323672,
+          "recall": 0.46,
+          "f1-score": 0.46342300824647753,
+          "support": 200.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          32,
+          23,
+          9
+        ],
+        [
+          30,
+          43,
+          23
+        ],
+        [
+          12,
+          11,
+          17
+        ]
+      ],
+      "confusion_matrix_order": [
+        "negative",
+        "neutral",
+        "positive"
+      ],
+      "count": 200,
+      "weighted_f1": 0.46342300824647753
+    }
+  },
+  "class_distribution": {
+    "train": {
+      "count": 1000,
+      "classes": {
+        "negative": {
+          "count": 295,
+          "percentage": 29.5
+        },
+        "neutral": {
+          "count": 471,
+          "percentage": 47.1
+        },
+        "positive": {
+          "count": 234,
+          "percentage": 23.4
+        }
+      }
+    },
+    "val": {
+      "count": 200,
+      "classes": {
+        "negative": {
+          "count": 73,
+          "percentage": 36.5
+        },
+        "neutral": {
+          "count": 85,
+          "percentage": 42.5
+        },
+        "positive": {
+          "count": 42,
+          "percentage": 21.0
+        }
+      }
+    },
+    "test": {
+      "count": 200,
+      "classes": {
+        "negative": {
+          "count": 64,
+          "percentage": 32.0
+        },
+        "neutral": {
+          "count": 96,
+          "percentage": 48.0
+        },
+        "positive": {
+          "count": 40,
+          "percentage": 20.0
+        }
+      }
+    }
+  },
+  "fusion_modality_diagnostic": {
+    "dimensions": {
+      "audio": 768,
+      "text": 384
+    },
+    "full": {
+      "accuracy": 0.52,
+      "macro_f1": 0.5283595385506213,
+      "predicted_class_counts": {
+        "negative": 79,
+        "neutral": 61,
+        "positive": 60
+      }
+    },
+    "zero_audio_block": {
+      "accuracy": 0.52,
+      "macro_f1": 0.5155845194306733,
+      "predicted_class_counts": {
+        "negative": 56,
+        "neutral": 73,
+        "positive": 71
+      }
+    },
+    "zero_text_block": {
+      "accuracy": 0.445,
+      "macro_f1": 0.4438548837099561,
+      "predicted_class_counts": {
+        "negative": 71,
+        "neutral": 65,
+        "positive": 64
+      }
+    },
+    "permutation_100_random_shuffles": {
+      "audio": {
+        "accuracy": {
+          "mean": 0.41795000000000004,
+          "std": 0.033106608101706826
+        },
+        "macro_f1": {
+          "mean": 0.41722942046440964,
+          "std": 0.032734017191647015
+        }
+      },
+      "text": {
+        "accuracy": {
+          "mean": 0.4218,
+          "std": 0.026809699737221974
+        },
+        "macro_f1": {
+          "mean": 0.4182540518731961,
+          "std": 0.026726325571585743
+        }
+      }
+    },
+    "first_layer_weight_norm_per_sqrt_dimension": {
+      "audio": 0.1989187647696093,
+      "text": 0.1991750531534673
+    },
+    "note": "Zero block replaces standardized branch with training mean; permutation breaks branch alignment while preserving marginal distribution."
+  },
+  "literal_text_sanity_examples": [
+    {
+      "text": "I absolutely love this!",
+      "prediction": "positive",
+      "probabilities": {
+        "negative": 0.07199858129024506,
+        "neutral": 0.10598500818014145,
+        "positive": 0.8220163583755493
+      },
+      "input_mode": "literal text with same MiniLM representation, not audio"
+    },
+    {
+      "text": "This is terrible.",
+      "prediction": "negative",
+      "probabilities": {
+        "negative": 0.6845635771751404,
+        "neutral": 0.1822279989719391,
+        "positive": 0.13320836424827576
+      },
+      "input_mode": "literal text with same MiniLM representation, not audio"
+    },
+    {
+      "text": "I'm so sad about this.",
+      "prediction": "negative",
+      "probabilities": {
+        "negative": 0.6109088659286499,
+        "neutral": 0.07982641458511353,
+        "positive": 0.3092646896839142
+      },
+      "input_mode": "literal text with same MiniLM representation, not audio"
+    },
+    {
+      "text": "I lost my laptop last week, it's so sad.",
+      "prediction": "positive",
+      "probabilities": {
+        "negative": 0.4376814365386963,
+        "neutral": 0.0739382654428482,
+        "positive": 0.4883802533149719
+      },
+      "input_mode": "literal text with same MiniLM representation, not audio"
+    },
+    {
+      "text": "Yes, I lost my laptop last week, it's so sad.",
+      "prediction": "positive",
+      "probabilities": {
+        "negative": 0.39855262637138367,
+        "neutral": 0.07581773400306702,
+        "positive": 0.5256296396255493
+      },
+      "input_mode": "literal text with same MiniLM representation, not audio"
+    },
+    {
+      "text": "Okay, I understand.",
+      "prediction": "neutral",
+      "probabilities": {
+        "negative": 0.10597342997789383,
+        "neutral": 0.7406010627746582,
+        "positive": 0.15342554450035095
+      },
+      "input_mode": "literal text with same MiniLM representation, not audio"
+    }
+  ],
+  "sanity_limit": "Sanity examples were evaluated only by text-only classifier; raw audio was unavailable.",
+  "conclusion": "Audio+Text leads on MELD. Fusion uses both modalities. The laptop/sad text is also positive under text-only MiniLM, so the text classifier can reproduce this false positive; the recording is required to separate audio effects from domain shift.",
+  "created_at_utc": "2026-09-25T16:18:57.131551+00:00"
+}

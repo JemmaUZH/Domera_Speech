@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "speech-sentiment-meld"
+version = "0.1.0"
+description = "MELD speech sentiment: emotion2vec/text fusion versus continuous Mimi"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+  "numpy==2.2.4",
+  "torch==2.5.1",
+  "scikit-learn==1.9.1; python_version >= '3.11'",
+  "scikit-learn==1.7.2; python_version < '3.11'",
+  "soundfile==0.14.0",
+  "scipy==1.18.0; python_version >= '3.12'",
+  "scipy==1.15.3; python_version < '3.12'",
+  "psutil==6.1.0",
+]
+
+[project.optional-dependencies]
+fusion = ["funasr==1.4.16", "modelscope==1.40.1", "faster-whisper==1.2.1", "sentence-transformers==5.7.0"]
+mimi = ["moshi==0.2.13", "huggingface-hub==0.36.2"]
+all = ["funasr==1.4.16", "modelscope==1.40.1", "faster-whisper==1.2.1", "sentence-transformers==5.7.0", "moshi==0.2.13", "huggingface-hub==0.36.2"]
+demo = ["gradio==5.50.0", "huggingface-hub==0.36.2", "matplotlib==3.10.1"]
+crema-d = ["matplotlib==3.10.1"]
+gpt-realtime = ["websockets==15.0.1", "matplotlib==3.10.1"]
+test = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

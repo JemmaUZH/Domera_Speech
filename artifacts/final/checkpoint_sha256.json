@@ -1,0 +1,8 @@
+{
+  "checkpoints/sentiment/audio.pt": "74979d43686b278b527979e79cdba58e11b7b008fc8f57c6e51bf548b5f06e00",
+  "checkpoints/sentiment/fusion.pt": "e4e0774131b9f3fb69e45af3edd9934a7105a534153d08eaafb389a51d1d92e7",
+  "checkpoints/sentiment/mimi.pt": "36ca2faff4a1564a799759adb9cb36db4b337e5e3ca9c9a7a11aa31828cca724",
+  "checkpoints/emotion/audio.pt": "3ff822e277aa8c98399e5b4a1eac334d6f26679029ce4383cf98e39767c8f97d",
+  "checkpoints/emotion/fusion.pt": "b5a12e15922beb3af7495c0650cff295120241235607ae0ad20295a60fa82d21",
+  "checkpoints/emotion/mimi.pt": "9db0bc59335a2ea54d871b615fcf52b41b72972e5fe443a2845da11808555743"
+}

@@ -1,0 +1,42 @@
+{
+  "dataset": "CREMA-D",
+  "test_manifest": "data/crema_d_supervised/test.jsonl",
+  "systems": {
+    "audio": {
+      "previous_meld_trained": {
+        "macro_f1": 0.09382518571179373,
+        "weighted_f1": 0.0900818547152858,
+        "accuracy": 0.15
+      },
+      "crema_d_trained": {
+        "macro_f1": 0.6489394191792992,
+        "weighted_f1": 0.6474737631184407,
+        "accuracy": 0.65
+      }
+    },
+    "fusion": {
+      "previous_meld_trained": {
+        "macro_f1": 0.10011159321845932,
+        "weighted_f1": 0.09652723290405757,
+        "accuracy": 0.17
+      },
+      "crema_d_trained": {
+        "macro_f1": 0.6433038571761078,
+        "weighted_f1": 0.643035605961421,
+        "accuracy": 0.645
+      }
+    },
+    "mimi": {
+      "previous_meld_trained": {
+        "macro_f1": 0.13321258530695218,
+        "weighted_f1": 0.12990668775935987,
+        "accuracy": 0.16
+      },
+      "crema_d_trained": {
+        "macro_f1": 0.6440739209231034,
+        "weighted_f1": 0.6432411136272798,
+        "accuracy": 0.645
+      }
+    }
+  }
+}
